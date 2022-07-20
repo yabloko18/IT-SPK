@@ -13,7 +13,7 @@ main.main {
     flex: 1 1 auto;
 }
 * {
-    -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color:  rgba(0, 0, 0, 0);
 }
 /* Контейнер */
 .wrapper {
@@ -202,7 +202,7 @@ main.main {
 h1 {
     font-weight: 900;
     line-height: 110%;
-    color: #00FEFF;
+    color: #fff;
 }
 h2 {
     font-weight: 700;
