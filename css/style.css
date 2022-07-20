@@ -15,6 +15,9 @@ main.main {
 * {
     -webkit-tap-highlight-color:  rgba(0, 0, 0, 0);
 }
+
+
+
 /* Контейнер */
 .wrapper {
     display: flex;
@@ -47,10 +50,14 @@ main.main {
     }
 }
 
+
+
 /* Шрифт */
 * {
     font-family: 'Poppins', sans-serif;
 }
+
+
 
 /* UI */
 .button {
@@ -198,11 +205,13 @@ main.main {
     font-weight: 700;
 }
 
+
+
 /* Типография */
 h1 {
     font-weight: 900;
     line-height: 110%;
-    color: #fff;
+    color: #00FEFF;
 }
 h2 {
     font-weight: 700;
@@ -228,6 +237,9 @@ h3 {
 .text_bold {
     font-weight: 700;
 }
+
+
+
 /* Шапка */
 header.header {
     position: absolute;
@@ -323,6 +335,8 @@ header.header._active .container {
         padding: 10px 0;
     }
 }
+
+
 
 /* Бургер */
 .menu__icon {
@@ -442,10 +456,13 @@ header.header._active .container {
         font-size: 24px;
     }
 }
+
+
+
 /* Section First-screen */
 .first-screen {
     padding: 155px 0 60px 0;
-    margin-bottom: 90px;
+    margin-bottom: 60px;
     position: relative;
 }
 .first-screen__container {
@@ -526,6 +543,9 @@ header.header._active .container {
         margin-top: 0;
     }
 }
+
+
+
 /* Section About */
 .about {
     margin-bottom: 60px;
@@ -559,6 +579,8 @@ header.header._active .container {
     }
 }
 
+
+
 /* Section Services */
 .services {
     margin-bottom: 60px;
@@ -570,7 +592,7 @@ header.header._active .container {
     padding: 0 15px;
     flex: 0 0 100%;
     max-width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 .services__col .col__body {
     display: flex;
@@ -605,21 +627,20 @@ header.header._active .container {
     color: #001E42;
 }
 .services__info {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 .info__title {
     font-weight: 700;
     font-size: 24px;
     line-height: 125%;
     color: #001E42;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 .info__text {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0 -15px;
-    margin-bottom: 30px;
+    margin: 0 -15px 30px -15px;
 }
 .info__text .text {
     padding: 0 15px;
@@ -636,7 +657,7 @@ header.header._active .container {
 }
 
 .services__problem {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 .problem__col {
     padding: 0 15px;
@@ -675,7 +696,7 @@ header.header._active .container {
     font-size: 24px;
     line-height: 29px;
     color: #001E42;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 .steps__col {
     padding: 0 15px;
@@ -755,12 +776,15 @@ header.header._active .container {
         margin-bottom: 0;
     }
 }
+
+
+
 /* Section Price */
 .price {
     margin-bottom: 44px;
 }
 .price__title {
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 .clients__col {
     padding: 0 15px;
@@ -856,6 +880,9 @@ header.header._active .container {
         max-width: 50%;
     }
 }
+
+
+
 /* Section Clients */
 .clients {
     margin-bottom: 60px;
@@ -926,6 +953,9 @@ header.header._active .container {
         column-count: 2;
     }
 }
+
+
+
 /* Section Request */
 .request {
     position: relative;
@@ -999,6 +1029,8 @@ header.header._active .container {
         margin-bottom: 0;
     }
 }
+
+
 
 /* Footer */
 .footer {
