@@ -35,11 +35,13 @@ if (menuLinks.length > 0) {
         menuLink.addEventListener('click', onMenuLinkClick);
     })
 
+    const timeout = 300;
+    let unlock = true;
+
     function onMenuLinkClick(e) {
         const menuLink = e.target;
         e.preventDefault();
-
-        if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
+        if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto) && unlock) {
             const gotoBlock = document.querySelector(menuLink.dataset.goto);
             const gotoBlockValue = gotoBlock.getBoundingClientRect().top - document.querySelector('header.header').offsetHeight;
             if (iconMenu) {
@@ -48,11 +50,16 @@ if (menuLinks.length > 0) {
                 iconMenu.classList.remove('_active')
                 menuBody.classList.remove('_active')
             }
-
             window.scrollBy({
                 top: gotoBlockValue,
                 behavior: 'smooth'
             })
+            if (unlock) {
+                unlock = false;
+                setTimeout(function () {
+                    unlock = true;
+                }, timeout);
+            }
         }
     }
 }

@@ -277,10 +277,6 @@ header.header._active .container {
     background: no-repeat center / 100% 100% url("../img/header/logo.png");
 }
 
-.menu__body {
-    display: flex;
-    justify-content: center;
-}
 .menu__list {
     margin-right: 40px;
 }
@@ -299,9 +295,6 @@ header.header._active .container {
     font-size: 12px;
     color: #fff;
     margin-right: 10px;
-}
-.phone__number {
-
 }
 .menu__list > li {
     position: relative;
@@ -333,6 +326,10 @@ header.header._active .container {
 
     .menu__list > li {
         padding: 10px 0;
+    }
+    .menu__body {
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -388,7 +385,8 @@ header.header._active .container {
         height: 100%;
         background-color: #06182F;
         padding: 155px 15px 30px 15px;
-        overflow: auto;
+        overflow-y: auto;
+        overflow-x: hidden;
         transition: .1s linear all;
         flex-wrap: wrap;
     }
@@ -423,15 +421,19 @@ header.header._active .container {
         width: 100%;
         top: 0;
         left: 0;
-        height: 70px;
+        height: 150px;
         background-color: transparent;
         z-index: 2;
     }
     .menu__body._active:after {
         background-color: #06182F;
     }
+    .header._active .menu__body:after {
+        height: 70px;
+    }
     .menu__list {
         width: 100%;
+        margin-bottom: 30px;
     }
     .menu__list > li {
         margin: 0 0 30px 0;
@@ -442,18 +444,26 @@ header.header._active .container {
         justify-content: flex-start;
     }
     .menu__phone {
-        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .menu__phone:last-child {
+        margin-bottom: 0;
+    }
+    .phone__name {
+        font-size: 18px;
         margin-bottom: 10px;
     }
-    .problem__text {
-        font-size: 24px;
+    .phone__number a {
+        font-size: 28px;
     }
     .menu__list > li:last-child {
         margin-bottom: 0;
     }
 
     .menu__list .menu__link {
-        font-size: 24px;
+        font-size: 28px;
     }
 }
 
